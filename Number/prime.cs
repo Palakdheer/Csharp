@@ -13,7 +13,7 @@ namespace PRIME
             Console.WriteLine("enter the value of n");
             int n = int.Parse(Console.ReadLine());
             int flag = 0;
-            for (int i = 2; i < n; i++)
+            for (int i = 2; i < n/2; i++)
             {
                 if (n % i == 0)
                 {
