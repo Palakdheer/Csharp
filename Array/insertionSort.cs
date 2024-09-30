@@ -14,7 +14,7 @@ namespace InsertionSort
             int i, j,t=0;
             for (i = 1; i < N; i++)
             {
-                t = a[j];
+                t = a[i];
                 j = i-1;
 
                 while (j >= 0 && t < a[j])
