@@ -14,8 +14,8 @@ namespace SelectionSort
             int i, j, pos = 0,min=0;
             for (i = 0; i < N - 1; i++)
             {
-                min = a[j];
-                pos = j;
+                min = a[i];
+                pos = i;
             
                 for (j = i+1; j < N; j++)
                 {
