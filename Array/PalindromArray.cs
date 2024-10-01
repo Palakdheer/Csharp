@@ -4,34 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace palindromArray
+namespace palindrom
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int[] arr = { 1, 2, 1, 3 };
-            int Flag = 0;
-            int[]b=new int[arr.Length];
-            for(int i=0; i<arr.Length; i++)
+            int[] arr = { 1, 2, 1, };
+            int Flag = 0,i=0,j=arr.Length-1;
+            while (i<j)
             {
-                 b[i] = arr[i];
-            
-            }
-            Array.Reverse(b);
-
-
-            for (int i = 0; i < arr.Length; i++) {
-                if (arr[i] != b[i])
+                if(arr[i]!=arr[j])
                 {
-                    Flag = 1;
+                    Flag=Flag+1;
                     break;
                 }
-
+                i++;
+                j--;
             }
             if (Flag == 0) {
                 Console.WriteLine("palindrom array");
-
             }
             else
             {
