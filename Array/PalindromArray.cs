@@ -10,7 +10,7 @@ namespace palindrom
     {
         static void Main(string[] args)
         {
-            int[] arr = { 1, 2, 1, };
+            int[] arr = { 1, 2, 1};
             int Flag = 0,i=0,j=arr.Length-1;
             while (i<j)
             {
