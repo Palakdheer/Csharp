@@ -22,7 +22,7 @@ namespace array2
         }
         int SecondMax(int[] a)
         {
-            int secondmax = 0, max = 0;
+            int secondmax = a[0], max = a[1];
             for (int i = 0; i < a.Length; i++)
             {
                 if (a[i] > max)
@@ -33,9 +33,9 @@ namespace array2
             }
             return secondmax;
         }
-        int smallest(int[] a)
+        int Secondsmall(int[] a)
         {
-            int small = 100, secondsmall = 0;
+            int small = a[0], secondsmall = a[1];
             for (int i = 0; i < a.Length; i++)
             {
                 if (a[i] < small) // { 2, 4, 1, 3, 5, 6, 7, 8, 9, 10, 11, 12,13};
@@ -43,11 +43,8 @@ namespace array2
                     secondsmall = small;
                     small = a[i];
                 }
-
             }
             return secondsmall;
-
         }
-
     }
 }
